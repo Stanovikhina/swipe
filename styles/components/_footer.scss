@@ -1,0 +1,13 @@
+$back-color: #1ea78d;
+
+.footer {
+    display: flex;
+    color: white;
+    background-color: $back-color;
+    padding-top: 100px;
+    padding-bottom: 125px;
+    align-items: center;
+    &-text {
+        margin: 0;
+    }
+}

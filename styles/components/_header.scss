@@ -1,0 +1,30 @@
+$color: white;
+$font-weight: 300;
+$logo_size: 28px;
+$back_color: #101636;
+$font-family-logo: 'Pacifico', cursive;
+
+
+
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .logo {
+        font-weight: $font-weight;
+        font-size: $logo_size;
+        font-family: $font-family-logo;
+        color: $color;
+        letter-spacing: 1.4px;
+    }
+    .after-logo {
+        padding-left: 27px;
+        border-left: 2px solid #103442;
+        margin-left: -500px;
+        font-size: 13px;
+        opacity: 0.3;
+        color: #ffffff;
+    }
+}

@@ -1,0 +1,52 @@
+$width: 350px;
+
+.form {
+    &-group {
+      margin-bottom: 10px;
+    }
+    &-control {
+      margin-bottom: 10px;
+    }
+}
+
+.input,
+.select,
+.textarea {
+  max-width: 100%;
+  width: $width;
+  height: 30px;
+  padding: 0 20px;
+  background-color: #fff;
+  color: #666;
+  border: 1px solid #999;
+  margin: 0;
+  border-radius: 0;
+  font-size: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.textarea {
+  height: 150px;
+  padding-top: 5px;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  outline: none;
+  background-color: #fff;
+  color: #666;
+  border-color: #1e87f0;
+}
+
+
+.input::placeholder, .textarea::placeholder {
+  color: #999;
+}
+
+
+.textarea {
+  resize: none;
+}

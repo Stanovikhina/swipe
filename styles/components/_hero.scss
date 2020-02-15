@@ -1,0 +1,33 @@
+$color: #fff;
+$font_size: 32px;
+$width: 400px;
+
+.hero {
+    background-image: url(../images/hero2.jpg);
+    background-color: #0eb493;
+    object-fit: contain;
+    height: 730px;
+    line-height: 1;
+    color: $color;
+    padding-top: 395px;
+    padding-bottom: 110px;
+
+
+    &-title {
+        margin-bottom: 22px;
+        margin-top: 0;
+        font-size: $font_size;
+        width: $width;
+        text-transform: capitalize;
+    }
+    &-description {
+        line-height: 1.5;
+        width: $width;
+        margin-bottom: 20px;
+    }
+}
+
+
+.creative {
+    color: #0fc686;
+}

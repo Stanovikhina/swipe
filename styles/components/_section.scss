@@ -1,0 +1,12 @@
+
+.section {
+    height: 460px;
+    &-title {
+        color: pink;
+        font-weight: $font-weight;
+        display: flex;
+        justify-content: center;
+        font-size: $title_size;
+        text-transform: uppercase;
+    }
+}

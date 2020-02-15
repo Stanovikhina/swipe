@@ -1,0 +1,12 @@
+$color: white;
+
+.nav {
+    color: $color;
+    font-size: 13px;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    &-item {
+        padding-left: 30px;
+    }
+}
+

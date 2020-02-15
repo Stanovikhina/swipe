@@ -1,0 +1,86 @@
+$color: black;
+$color-hover: red;
+$font-size: 13px;
+$line-height: 2;
+$font-family: 'Open Sans', sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+
+}
+
+html {
+  font-size: 14px;
+  line-height: $line-height;
+  font-family: $font-family;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+@mixin links ($link, $visit, $hover, $active) {
+  a {
+    color: $link;
+    text-decoration: none;
+    font-size: $font-size;
+    &:visited {
+      color: $visit;
+    }
+    &:hover {
+      color: $hover;   
+    }
+    &:active {
+      color: $active;
+    }
+  }
+}
+
+@include links(white, white, #0eb493, #0fd892);
+
+
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+p,
+ul,
+ol {
+  margin: 0 0 15px 0;
+}
+
+* + p,
+* + ul,
+* + ol {
+  margin-top: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.67em 0;
+}
+
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6 {
+  margin-top: 0.67em;
+}

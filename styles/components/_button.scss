@@ -1,0 +1,42 @@
+@mixin button-variant($color, $bg, $b-color, $dark: "dark") {
+    @if ($dark == "dark") {
+      color: $color;
+      background: $bg;
+      border-color: $b-color;
+      &:hover {
+        color: darken($color, 40%);
+        background: darken($bg, 40%);
+        border-color: darken($b-color, 40%);
+      }
+    } @else if ($dark == "light") {
+      color: $color;
+      background: $bg;
+      border-color: $b-color;
+      &:hover {
+        color: lighten($color, 40%);
+        background: lighten($bg, 40%);
+        border-color: lighten($b-color, 40%);
+      }
+    }
+  }
+  
+  .button {
+    padding: 5px 20px;
+    font-size: 16px;
+    border: 1px solid rgb(161, 23, 23);
+    &-primary {
+      @include button-variant(green, red, green, "dark");
+    }
+    &-success {
+      @include button-variant(white, rgb(238, 24, 59), rgb(238, 24, 59), "light");
+    }
+    &-red {
+      @include button-variant(white, rgb(238, 24, 59), rgb(238, 24, 59), "light");
+      width: 100%;
+    }
+    &-project {
+      @include button-variant(white, rgb(238, 24, 59), rgb(238, 24, 59), "light");
+      width: 350px;
+    }
+  }
+  
